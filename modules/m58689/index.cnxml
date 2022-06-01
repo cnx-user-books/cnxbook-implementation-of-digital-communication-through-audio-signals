@@ -1,0 +1,16 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+
+<title>Conclusions</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m58689</md:content-id>
+  <md:title>Conclusions</md:title>
+  <md:abstract>A summary of results and future work for this project.</md:abstract>
+  <md:uuid>a19641be-99bd-4bd3-b2a3-86f9153fee24</md:uuid>
+</metadata>
+
+<content>
+  <para id="eip-338">By successfully transmitting an image between two laptops with zero bit error, the results from this research project show that this communication scheme could be utilized for our initial mission. It proves how data can be transferred to a secondary computer, stored, and retrieved at a later time. Additionally, this communication scheme can be easily adapted to send and receive images larger than 32 x 32 pixels.
+</para><para id="delete_me"><title>Further Research</title>Were one to try and implement this scheme as a method of one-way communication, special attention would need to be paid to make sure both the transmitting and receiving devices have identical sampling rate characteristics. Alternatively, one could attempt to tackle the frequency mismatch problem by implementing phase locked loops as a part of the communication scheme. 
+</para><para id="eip-853">There are many possibilities for further work with this research. To further optimize our system, we could work to increase the distance between the two laptops while still maintaining 0 bit error. The bitrate of the communication scheme could also be increased through implementing different error correcting codes and image compression. We could also expand upon our initial idea by incorporating machine learning aspects into the scheme. Data transferred from the primary computer could be manipulated on the secondary computer; for example, it could classify the image, declaring a picture of a corgi a dog. This classification could then be sent back to the primary computer in addition to the image itself. </para></content>
+
+</document>

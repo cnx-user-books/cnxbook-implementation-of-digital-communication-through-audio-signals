@@ -1,0 +1,15 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+
+<title>Creating the Receiver</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m58686</md:content-id>
+  <md:title>Creating the Receiver</md:title>
+  <md:abstract>Step by step sequence of how the receiver was created.</md:abstract>
+  <md:uuid>ddfa16a7-6458-4651-ac2d-e2f6540720a6</md:uuid>
+</metadata>
+
+<content>
+  <para id="delete_me">The following section describes, in sequence, how the image was received and reconstructed.</para><para id="eip-737"><title>Recording the Signal </title>The receiver records the transmitted signal through the use of Matlab’s audio recorder object. 
+</para><para id="eip-990"><title>Removing the Delay </title>The recorded signal is convolved with a time reversed version of the chirp signal appended to the transmitted signal.  Since the chirp signal is unlikely to be similar to any other signal in the received waveform, the spike in the aforementioned calculation will be where the BPSK modulated signal begins in time in the recorded signal. </para><para id="eip-263"><title>Demodulating the BPSK Signal </title>In order to decode the BPSK analog waveform into bits, the dot product of each analog sine wave representing a bit in the recorded message is taken with  sin(2 Pi fc t)and -sin(2 Pi fc t). If the dot product withsin(2 Pi fc t) is bigger, a 0 is chosen; otherwise, a 1 is chosen.</para><para id="eip-282"><title>Decoding the Bits </title>After reconstructing a coded bit string from the analog waveform, the 7-4 Hamming encoded bits are decoded using Matlab’s built in decode function.</para><para id="eip-176"><title>Reconstructing the Image </title>Finally, the decoded bit string is converted into the original image using the opposite process that the transmitter used to create a string of bits from an image.  </para></content>
+
+</document>

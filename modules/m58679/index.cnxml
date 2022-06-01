@@ -1,0 +1,16 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+
+<title>Previous Work</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m58679</md:content-id>
+  <md:title>Previous Work</md:title>
+  <md:abstract>A summary of the previous work supporting this project.</md:abstract>
+  <md:uuid>a3185689-8c91-432e-bd97-49752b890236</md:uuid>
+</metadata>
+
+<content>
+  <para id="eip-87">Much of the previous research that this project draws from has been in the realm of digital communication, due to its similar focus on transferring information between two devices over a channel. Many of the obstacles faced in classical digital communication also arose in this project. So, the robust solutions already created for standard communication were implemented here to increase the accuracy of our communication scheme. For example, binary phase shift keying is a known and commonly used method to transmit digital data over a channel ("BPSK Modulator"). Because of the past optimization of this technique, BPSK was employed in our communication scheme. Similarly, the Hamming code was developed over six decades ago as an error correcting code, and has since been thoroughly developed ("Hamming Code”). A 7-4 Hamming code was used in this project to decrease bit errors in the communication of information between two laptops. Both of these methods are discussed in further detail below.
+</para><para id="delete_me">This research project also parallels the development of more modern technologies that focus on connecting personal computers to central servers. Inventions such as DropBox and iCloud have begun the trend of permitting personal devices to utilize larger, more powerful external computers. Founded in 2007, DropBox quickly began generating revenue and attracting users (Barret). With the mission of enabling users to access all of their files from any device, DropBox allows users to upload their information to a central server, and later access that information with a username and password from any computer ("How Does the Dropbox Service Work?"). As of the second quarter in 2015, the company had a user base of over 300 million people (Tarver). iCloud focuses on allowing its 250 million users to store data “in the cloud,” thus keeping space free on their personal device ("Apple's iCloud”). <!-- Insert module text here -->
+  </para><para id="eip-898">The quick and widespread adoption of these two technologies shows the potential that similar technologies, which connect personal computers to external servers, have to succeed. Users seem willing to adopt technologies that allow them to access greater computing power, and not resistant to the idea of storing information in an external location. The popularity of these inventions validates the motivation for this research project.</para></content>
+
+</document>

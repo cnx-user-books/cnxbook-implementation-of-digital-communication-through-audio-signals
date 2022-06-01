@@ -1,0 +1,16 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+
+<title>Creating the Transmitter</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m58684</md:content-id>
+  <md:title>Creating the Transmitter</md:title>
+  <md:abstract>Step by step sequence of how the transmitter was created.</md:abstract>
+  <md:uuid>84a74ac6-18f5-4040-832e-29b6e5efcbc8</md:uuid>
+</metadata>
+
+<content>
+  <para id="delete_me">The following section describes, in sequence, how the image was transmitted over the channel. 
+  </para><para id="eip-79"><title>Image to Vector of Bits</title>The transmitter loads the image from the computer and converts it into a vector of bits.  This is done using Matlab commands that first convert an image into a matrix of integers between 0-255, and then converts the matrix of integers into bits. </para><para id="eip-587"><title>Encoding the Message </title>After creating a vector of bits, the transmitter encodes the bits using a 7-4 hamming encoding.  This is done through the built in Matlab function that takes a string of bits and encodes the bits according to specified parameters. 
+</para><para id="eip-978"><title>BPSK Modulation </title>The coded bits are converted into an analog waveform using a BPSK modulation scheme.  A 0 is represented by sin(2 Pi fc t) and a 1 is represented by -sin(2 Pi fc t).  A sampling rate of 48 kHz was chosen to generate these sine waves.  Matrix manipulations and multiplications are performed to generate the BPSK waveform to be transmitted.  Each bit is represented in .01 seconds, giving the scheme a bit rate of 100 bits/second. </para><para id="eip-499"><title>Sounding the Channel</title>After testing for the frequency response of the channel, a modulation frequency of fc = 2250 Hz was chosen as the channel least attenuated the signal around that frequency.</para><para id="eip-625"><title>Chirp Signal</title>Finally, a chirp signal, generated through the Matlab chirp function, is appended to the beginning of the BPSK modulated signal.  The receiver uses the chirp signal to determine where in time to start processing the received signal.   </para><para id="eip-940"><title>Playing the Signal </title>The final analog waveform to be transmitted is played through the laptop speakers using Matlab’s soundsc function.</para></content>
+
+</document>

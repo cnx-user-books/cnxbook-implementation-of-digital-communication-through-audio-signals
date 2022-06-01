@@ -1,0 +1,15 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+
+<title>Summary of Approach</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m58680</md:content-id>
+  <md:title>Summary of Approach</md:title>
+  <md:abstract>An overview of the steps involved in creating this communication scheme.</md:abstract>
+  <md:uuid>175fdb93-866a-4aef-aee5-172a0aa0df4b</md:uuid>
+</metadata>
+
+<content>
+  <para id="delete_me">To realize this idea of a digital communication scheme between two devices, or in our case two laptops, we decided to use a 32 x 32 pixel image as a way of characterizing our method of transmitting and receiving which could then be upscaled to accommodate larger images. The focus of our project was split between developing a transmission scheme and a reception scheme. On a high level, with regards to transmission, we took this 32 x 32 pixel image and converted it into bits, which were then transformed into an analog waveform using a digital modulation scheme. This waveform was then transmitted auditorily from a speaker on the transmitting laptop, and recorded by the microphone on the second laptop. When the user requested the image be retrieved from the secondary laptop back to the primary laptop, the secondary laptop played the recording back via the speakers to the primary laptop, where it was again recorded. Once the signal had been recorded, we reconstructed the original 32 x 32 pixel image using demodulation and decoding.<!-- Insert module text here -->
+  </para></content>
+
+</document>

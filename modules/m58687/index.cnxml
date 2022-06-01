@@ -1,0 +1,24 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+
+<title>Results</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m58687</md:content-id>
+  <md:title>Results</md:title>
+  <md:abstract>Description of the major problems faced and results from this project.</md:abstract>
+  <md:uuid>3fd604ce-3f26-40f1-895d-0b6d7b41f170</md:uuid>
+</metadata>
+
+<content>
+  <para id="delete_me">Extensive testing was done to determine the effectiveness of our communication system. Since the communication is done auditorily, both laptops must be within close range. One laptop transmits via a speaker, and the other records the sound. To test how effective our communication was, we calculated the number of bit errors that occurred from transmission to reception. Various 500 bit sequences were sent; then, the received, decoded message was XORed with the original bit sequence to determine how many bit errors occurred.</para><para id="eip-65">Initially, when first testing our system, our bit error was consistently around 250 out of 500 bits. This led us to believe that our demodulator was simply guessing when decoding, but upon further investigation, our bit error occurred in blocks as in the graph below.</para><code id="eip-478" display="block"><media id="cnx_1" alt="A block of error bits.">
+	   
+  <image mime-type="image/jpeg" src="../../media/cnx 1.jpg"/>
+		 
+</media></code><para id="eip-744">The message would be decoded correctly at first, but suddenly, over 100 bits would be consistently decoded incorrectly before the modulator would correct itself. To see what was underlying this problem, we compared the received analog waveform with the transmitted waveform.</para><para id="eip-779">This revealed one major problem: there existed a frequency mismatch between the transmitted and received signal. Both signals originally began in phase, but due to the frequency mismatch, would become out of phase enough to confuse the BPSK demodulator. The graph below shows the same bit of the sent and received signal, represented as an analog waveform. This graph shows the frequency mismatch between the two signals.</para><code id="eip-509" display="block"><media id="cnx_2" alt="Frequency mismatched signals.">
+	   
+  <image mime-type="image/jpeg" src="../../media/cnx 2.jpg"/>
+		 
+</media></code><para id="eip-782">At points, the received signal looks around 180 degrees out of phase with the original transmitted signal. This explains the blocks of bit error and why the demodulator would consistently decode an entire block of bits incorrectly. However, when the two signals became 360 degrees out of phase, the demodulator would again begin to decode correctly.
+</para><para id="eip-91">To confirm the frequency mismatch, we played and recorded a pure sine wave at our carrier frequency: 2250 Hz. The sine wave would be played from one laptop and recorded on both laptops. Despite the fact that the same sampling rate was picked for recording, the DFT’s of both recorded signals revealed the frequency mismatch. The frequency of the recorded sine wave on the laptop that did not play the sine wave had a spike at 2250.22 Hz. This slight frequency shift gave rise to the blocks of error.</para><para id="eip-475">We mitigated this effect by transmitting the signal from the first laptop, recording on the second laptop, and then replaying the recorded signal back to the first laptop. Although the stored message on the second computer would be corrupted, the original laptop decoded the replayed signal with zero bit error, meeting the goal of our project.
+</para></content>
+
+</document>

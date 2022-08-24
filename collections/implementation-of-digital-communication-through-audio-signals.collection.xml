@@ -1,74 +1,23 @@
-<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en">
+<?xml version="1.0"?>
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en" authors="Sarah Hooper">
   <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
-  <md:content-id>col11935</md:content-id>
-  <md:title>Implementation of Digital Communication through Audio Signals</md:title>
-  
-  
-  <md:license url="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License 4.0</md:license>
-  <md:language>en</md:language>
-
-  
-
-  
-  
-  
-  
-  
-
-  <md:uuid>a440fee8-86a4-44c0-a6e3-e6d4931d89ee</md:uuid>
-<md:slug>implementation-of-digital-communication-through-audio-signals</md:slug>
-</metadata>
-
+    <md:content-id>col11935</md:content-id>
+    <md:title>Implementation of Digital Communication through Audio Signals</md:title>
+    <md:license url="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License 4.0</md:license>
+    <md:language>en</md:language>
+    <md:uuid>a440fee8-86a4-44c0-a6e3-e6d4931d89ee</md:uuid>
+    <md:slug>implementation-of-digital-communication-through-audio-signals</md:slug>
+  </metadata>
   <col:content>
-    
-      <col:module document="m58674"/>
-        
-      
-    
-    
-      <col:module document="m58679"/>
-        
-      
-    
-    
-      <col:module document="m58680"/>
-        
-      
-    
-    
-      <col:module document="m58684"/>
-        
-      
-    
-    
-      <col:module document="m58686"/>
-        
-      
-    
-    
-      <col:module document="m58688"/>
-        
-      
-    
-    
-      <col:module document="m58687"/>
-        
-      
-    
-    
-      <col:module document="m58689"/>
-        
-      
-    
-    
-      <col:module document="m58690"/>
-        
-      
-    
-    
-      <col:module document="m58695"/>
-        
-      
-    
+    <col:module document="m58674"/>
+    <col:module document="m58679"/>
+    <col:module document="m58680"/>
+    <col:module document="m58684"/>
+    <col:module document="m58686"/>
+    <col:module document="m58688"/>
+    <col:module document="m58687"/>
+    <col:module document="m58689"/>
+    <col:module document="m58690"/>
+    <col:module document="m58695"/>
   </col:content>
 </col:collection>
